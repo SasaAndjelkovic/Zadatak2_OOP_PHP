@@ -1,5 +1,9 @@
 <?php
 
+namespace Model;
+
+use Model\PersonInformation;
+
 class Manager extends BasicInformation implements PersonInformation {
 
 	private $email;

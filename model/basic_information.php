@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 abstract class BasicInformation {
     protected int $id;
     protected string $name;

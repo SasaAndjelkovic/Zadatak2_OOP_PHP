@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 interface TheaterInformation
 {
     public function getDescription();

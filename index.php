@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 include "loaddata.php";
 
 //ADD
@@ -75,7 +77,6 @@ if (isset($_POST['fname']) && isset($_POST['pass'])) {
         exit();
     }
 }
-
 
 if (isset($_SESSION['fname'])) {
     include 'view/home.php';

@@ -1,11 +1,15 @@
 <?php
 
+namespace Model;
+
 include "model/basic_information.php";
 include "model/person_information.php";
 include "model/manager.php";
 include "model/theater_information.php";
 include "model/show.php";
 include "model/avatar.php";
+
+use Model\{Manager, Show, Avatar};
 
 if (!isset($_SESSION))
     session_start();
