@@ -11,7 +11,7 @@ if (isset($_POST['dodajPredstavu'])) {
         $_POST['nazivPredstave'],
         $_POST['opis'],
         $_POST['autor'],
-        //$_POST['avatar']
+        //$_POST['avatar']  // treba napravati opadajuci meni postojecih avatara
     );
     $_SESSION['predstave'][] = $noviTim;
     include "view/home.php";
@@ -55,7 +55,6 @@ if (isset($_POST['azurirajPredstavu'])) {
         $_SESSION['predstave'][$nb]->setDescription($_POST['opis']);
         $_SESSION['predstave'][$nb]->setAuthor($_POST['autor']);
         //$_SESSION['predstave'][$nb]->setSpisakAvatara($_SESSION['predstave'][)[0]->setName($_POST['avatar']);
-
     }
     include "view/home.php";
     exit();
