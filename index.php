@@ -1,19 +1,26 @@
 <?php
 
-namespace Model;
+require "dbBroker.php"; 
+include "model/basic_information.php";
+include "model/person_information.php";
+include "model/manager.php";
+include "model/theater_information.php";
+include "model/show.php";
+include "model/avatar.php";
 
-include "loaddata.php";
+if (!isset($_SESSION))
+    session_start();
 
 //ADD
 if (isset($_POST['dodajPredstavu'])) {
-    $noviTim = new Show (
+    $novaPredstava = new Show (
         findMaxId() + 1,
         $_POST['nazivPredstave'],
         $_POST['opis'],
         $_POST['autor'],
         //$_POST['avatar']  // treba napravati opadajuci meni postojecih avatara
     );
-    $_SESSION['predstave'][] = $noviTim;
+    $_SESSION['predstave'][] = $novaPredstava;
     include "view/home.php";
     exit();
 }
@@ -59,7 +66,7 @@ if (isset($_POST['azurirajPredstavu'])) {
     include "view/home.php";
     exit();
 }
-//move to updateTeam.php
+//move to updateShow.php
 if (isset($_GET['izmeni'])) {
     include_once "view/updateShow.php";
     exit();

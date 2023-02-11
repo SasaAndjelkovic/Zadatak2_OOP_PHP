@@ -1,9 +1,5 @@
 <?php
 
-namespace Model;
-
-use Model\{TheaterInformation, BasicInformation};
-
 class Show extends BasicInformation implements TheaterInformation {
     private $author;
     private $description;

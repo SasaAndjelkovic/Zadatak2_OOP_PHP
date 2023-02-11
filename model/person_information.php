@@ -1,7 +1,5 @@
 <?php
 
-namespace Model;
-
 interface PersonInformation {
     public function getEmail();
     public function setEmail($email);
