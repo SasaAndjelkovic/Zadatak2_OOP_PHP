@@ -3,17 +3,17 @@
 namespace Model;
 
 include "loaddata.php";
-
+//povratak
 //ADD
 if (isset($_POST['dodajPredstavu'])) {
-    $noviTim = new Show (
+    $novaPredstava = new Show (
         findMaxId() + 1,
         $_POST['nazivPredstave'],
         $_POST['opis'],
         $_POST['autor'],
         //$_POST['avatar']  // treba napravati opadajuci meni postojecih avatara
     );
-    $_SESSION['predstave'][] = $noviTim;
+    $_SESSION['predstave'][] = $novaPredstava;
     include "view/home.php";
     exit();
 }

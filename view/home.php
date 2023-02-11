@@ -17,15 +17,6 @@ trait Welcome {
         $msg = "Izvestaj o prodaji se sastoji od dva podataka: datum izvestaja i kolicina prodaje"; 
         return strtoupper($msg);
     }
-
-    // public static function _toString($msg, $quantity, $datum) {  
-    //     echo strtoupper($msg);
-    //     echo "<hr>";
-    //     echo $datum;
-    //     echo "<hr>";
-    //     echo $quantity;
-    //     echo "<hr>";
-    // }
 }
 
 echo "<h1>Izvestaj o prodaji</h1>";
