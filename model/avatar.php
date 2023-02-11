@@ -3,7 +3,6 @@
 namespace Model;
 
 use Model\TheaterInformation;
-
 class Avatar extends BasicInformation implements TheaterInformation {
 
     private $description;

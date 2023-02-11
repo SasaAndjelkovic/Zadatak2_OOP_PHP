@@ -39,4 +39,3 @@ $show6->setSpisakAvatara([$avatar4]);
 
 $_SESSION["user"] = $manager;
 $_SESSION["predstave"] = $nizPredstava;
-

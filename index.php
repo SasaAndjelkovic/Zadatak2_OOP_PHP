@@ -3,7 +3,7 @@
 namespace Model;
 
 include "loaddata.php";
-//povratak
+
 //ADD
 if (isset($_POST['dodajPredstavu'])) {
     $novaPredstava = new Show (
@@ -59,7 +59,7 @@ if (isset($_POST['azurirajPredstavu'])) {
     include "view/home.php";
     exit();
 }
-//move to updateTeam.php
+//move to updateShow.php
 if (isset($_GET['izmeni'])) {
     include_once "view/updateShow.php";
     exit();
